@@ -57,7 +57,7 @@
             // Otherwise, the browser will load the script multiple times,
             // potentially different versions.
             // MODIFIED LINE: Using the template token directly
-            var serviceWorkerUrl = 'flutter_service_worker.js?v="2219827798"';
+            var serviceWorkerUrl = 'flutter_service_worker.js?v="2621434177"';
             navigator.serviceWorker.register(serviceWorkerUrl)
               .then((reg) => {
                 function waitForActivation(serviceWorker) {
@@ -73,7 +73,7 @@
                   // one for the first time. Simply wait for it to activate.
                   waitForActivation(reg.installing || reg.waiting);
                 // MODIFIED LINE: Comparing endsWith against the template token string
-                } else if (!reg.active.scriptURL.endsWith('"2219827798"')) {
+                } else if (!reg.active.scriptURL.endsWith('"2621434177"')) {
                   // When the app updates the serviceWorkerVersion changes, so we
                   // need to ask the service worker to update.
                   console.log('New service worker available.');
